@@ -20,7 +20,7 @@ class VinylController extends AbstractController
             ['song' => 'On Bended Knee', 'artist'=>'Boyz II Men'],
             ['song' => 'Fantasy ','artist'=>' Mariah Carey'],
         ];
-
+        dump($tracks); //mejor sale abajo en la consola
         return $this->render('vinyl/homepage.html.twig', [ // render() method is inherited from AbstractController Y bueno tambien el nombre vinyl debe coincidir con el controlador y que homepage debe coincidir a dodne deberia ir
             'title' => 'PB & Jams',
             'tracks' => $tracks,
